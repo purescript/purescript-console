@@ -2,10 +2,10 @@ module Console where
 
 import Control.Monad.Eff
 
--- | The `Console` effect represents those computations which write to the console.
-foreign import data Console :: !
+-- | The `CONSOLE` effect represents those computations which write to the console.
+foreign import data CONSOLE :: !
 
--- | Write a `String` to the console.
+-- | Write a message to the console.
 foreign import log
   """
   function log(s) {
@@ -14,9 +14,9 @@ foreign import log
       return {};
     };
   }
-  """ :: forall eff. String -> Eff (console :: Console | eff) Unit
+  """ :: forall eff. String -> Eff (console :: CONSOLE | eff) Unit
 
--- | Write an error to the console
+-- | Write an error to the console.
 foreign import error
   """
   function error(s) {
@@ -25,8 +25,8 @@ foreign import error
       return {};
     };
   }
-  """ :: forall eff. String -> Eff (console :: Console | eff) Unit
+  """ :: forall eff. String -> Eff (console :: CONSOLE | eff) Unit
 
 -- | Write a value to the console, using its `Show` instance to produce a `String`.
-print :: forall a eff. (Show a) => a -> Eff (console :: Console | eff) Unit
-print o = log (show o)
+print :: forall a eff. (Show a) => a -> Eff (console :: CONSOLE | eff) Unit
+print = log <<< show
