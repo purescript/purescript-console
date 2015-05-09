@@ -1,42 +1,15 @@
-# Important notice
+# purescript-console
 
-This module should not yet be depended on, it is for the upcoming 0.7 compiler release.
+[![Build Status](https://travis-ci.org/purescript/purescript-console.svg?branch=master)](https://travis-ci.org/purescript/purescript-console)
 
-# Module Documentation
+Console-related functions. For use with compiler version >= 0.7.
 
-## Module Console
+## Installation
 
-#### `CONSOLE`
-
-``` purescript
-data CONSOLE :: !
+```
+bower install purescript-console
 ```
 
-The `CONSOLE` effect represents those computations which write to the console.
+## Module documentation
 
-#### `log`
-
-``` purescript
-log :: forall eff. String -> Eff (console :: CONSOLE | eff) Unit
-```
-
-Write a message to the console.
-
-#### `error`
-
-``` purescript
-error :: forall eff. String -> Eff (console :: CONSOLE | eff) Unit
-```
-
-Write an error to the console.
-
-#### `print`
-
-``` purescript
-print :: forall a eff. (Show a) => a -> Eff (console :: CONSOLE | eff) Unit
-```
-
-Write a value to the console, using its `Show` instance to produce a `String`.
-
-
-
+- [Console](docs/Console.md)
