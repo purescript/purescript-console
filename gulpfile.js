@@ -35,7 +35,7 @@ gulp.task("docs", function () {
     .pipe(plumber())
     .pipe(purescript.pscDocs({
       docgen: {
-        "Console": "docs/Console.md"
+        "Control.Monad.Eff.Console": "docs/Control.Monad.Eff.Console.md"
       }
     }));
 });

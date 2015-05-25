@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/purescript/purescript-console.svg?branch=master)](https://travis-ci.org/purescript/purescript-console)
 
-Console-related functions. For use with compiler version >= 0.7.
+Console-related functions and effect type.
 
 ## Installation
 
@@ -10,6 +10,8 @@ Console-related functions. For use with compiler version >= 0.7.
 bower install purescript-console
 ```
 
+This library requires PureScript 0.7 or later.
+
 ## Module documentation
 
-- [Console](docs/Console.md)
+- [Control.Monad.Eff.Console](docs/Control.Monad.Eff.Console.md)

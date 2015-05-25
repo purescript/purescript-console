@@ -1,7 +1,7 @@
 /* global exports, console */
 "use strict";
 
-// module Console
+// module Control.Monad.Eff.Console
 
 exports.log = function (s) {
   return function () {
