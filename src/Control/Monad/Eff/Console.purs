@@ -1,4 +1,4 @@
-module Console where
+module Control.Monad.Eff.Console where
 
 import Prelude
 
