@@ -1,5 +1,7 @@
 module Console where
 
+import Prelude
+
 import Control.Monad.Eff
 
 -- | The `CONSOLE` effect represents those computations which write to the console.
