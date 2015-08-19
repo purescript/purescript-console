@@ -1,5 +1,7 @@
 ## Module Control.Monad.Eff.Console
 
+Console-related functions and effect type.
+
 #### `CONSOLE`
 
 ``` purescript
