@@ -1,3 +1,4 @@
+-- | Console-related functions and effect type.
 module Control.Monad.Eff.Console where
 
 import Prelude
