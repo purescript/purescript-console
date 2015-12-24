@@ -12,7 +12,7 @@ Console-related functions and effect type.
 bower install purescript-console
 ```
 
-This library requires PureScript 0.7 or later.
+This library requires PureScript 0.8 or later.
 
 ## Module documentation
 

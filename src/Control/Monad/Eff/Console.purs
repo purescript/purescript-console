@@ -1,9 +1,9 @@
 -- | Console-related functions and effect type.
 module Control.Monad.Eff.Console where
 
-import Prelude
+import Prelude (..)
 
-import Control.Monad.Eff
+import Control.Monad.Eff (Eff)
 
 -- | The `CONSOLE` effect represents those computations which write to the console.
 foreign import data CONSOLE :: !
