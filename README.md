@@ -12,8 +12,6 @@ Console-related functions and effect type.
 bower install purescript-console
 ```
 
-This library requires PureScript 0.7 or later.
+## Documentation
 
-## Module documentation
-
-- [Control.Monad.Eff.Console](docs/Control/Monad/Eff/Console.md)
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-console).

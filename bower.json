@@ -2,10 +2,6 @@
   "name": "purescript-console",
   "homepage": "https://github.com/purescript/purescript-console",
   "description": "Console-related functions and effect type for PureScript.",
-  "keywords": [
-    "purescript",
-    "console"
-  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -18,10 +14,9 @@
     "output",
     "test",
     "bower.json",
-    "gulpfile.js",
     "package.json"
   ],
   "dependencies": {
-    "purescript-eff": "^0.1.2"
+    "purescript-eff": "^1.0.0-rc.1"
   }
 }
