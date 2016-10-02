@@ -1,7 +1,5 @@
 "use strict";
 
-// module Control.Monad.Eff.Console
-
 exports.log = function (s) {
   return function () {
     console.log(s);
