@@ -1,13 +1,13 @@
 module Control.Monad.Eff.Console where
 
-import Control.Monad.Eff (Eff)
+import Control.Monad.Eff (Eff, kind Effect)
 
 import Data.Show (class Show, show)
 import Data.Unit (Unit)
 
 -- | The `CONSOLE` effect represents those computations which write to the
 -- | console.
-foreign import data CONSOLE :: !
+foreign import data CONSOLE :: Effect
 
 -- | Write a message to the console.
 foreign import log
