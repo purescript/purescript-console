@@ -52,3 +52,6 @@ foreign import info
 -- | `String`.
 infoShow :: forall a eff. Show a => a -> Eff (console :: CONSOLE | eff) Unit
 infoShow a = info (show a)
+
+-- | Clear the console. Note that this is not supported in node.js.
+foreign import clear :: forall eff. Eff (console :: CONSOLE | eff) Unit

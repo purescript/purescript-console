@@ -27,3 +27,8 @@ exports.info = function (s) {
     return {};
   };
 };
+
+exports.clear = function () {
+  console.clear();
+  return {};
+};
