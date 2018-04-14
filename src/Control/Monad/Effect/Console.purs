@@ -1,6 +1,6 @@
-module Control.Monad.Effect.Console where
+module Effect.Console where
 
-import Control.Monad.Effect (Effect)
+import Effect (Effect)
 
 import Data.Show (class Show, show)
 import Data.Unit (Unit)

@@ -17,6 +17,6 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-effect": "^0.1.0"
+    "purescript-effect": "purescript/purescript-effect#compiler/0.12"
   }
 }
