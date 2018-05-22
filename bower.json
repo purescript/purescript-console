@@ -1,8 +1,7 @@
 {
   "name": "purescript-console",
   "homepage": "https://github.com/purescript/purescript-console",
-  "description": "Console-related functions and effect type for PureScript.",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git://github.com/purescript/purescript-console.git"
@@ -17,6 +16,7 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-eff": "^3.0.0"
+    "purescript-effect": "^2.0.0",
+    "purescript-prelude": "^4.0.0"
   }
 }
