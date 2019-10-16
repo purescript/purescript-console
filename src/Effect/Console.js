@@ -28,6 +28,13 @@ exports.info = function (s) {
   };
 };
 
+exports.table = function (s) {
+  return function () {
+    console.table(s);
+    return {};
+  };
+};
+
 exports.time = function (s) {
   return function () {
     console.time(s);

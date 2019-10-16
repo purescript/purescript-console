@@ -30,6 +30,9 @@ info = liftEffect <<< EffConsole.info
 infoShow :: forall m a. MonadEffect m => Show a => a -> m Unit
 infoShow = liftEffect <<< EffConsole.infoShow
 
+table :: forall m a. MonadEffect m => a -> m Unit
+table = liftEffect <<< EffConsole.table
+
 time :: forall m. MonadEffect m => String -> m Unit
 time = liftEffect <<< EffConsole.time
 

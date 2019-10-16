@@ -45,6 +45,12 @@ foreign import info
 infoShow :: forall a. Show a => a -> Effect Unit
 infoShow a = info (show a)
 
+-- | Write an tabular data to the console as a table.
+foreign import table
+  :: forall a
+   . a
+  -> Effect Unit
+
 -- | Start a named timer.
 foreign import time :: String -> Effect Unit
 
