@@ -35,6 +35,13 @@ exports.time = function (s) {
   };
 };
 
+exports.timeLog = function (s) {
+  return function () {
+    console.timeLog(s);
+    return {};
+  };
+};
+
 exports.timeEnd = function (s) {
   return function () {
     console.timeEnd(s);
