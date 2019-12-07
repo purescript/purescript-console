@@ -48,7 +48,7 @@ infoShow a = info (show a)
 -- | Start a named timer.
 foreign import time :: String -> Effect Unit
 
--- | Print time since it started in milliseconds.
+-- | Print the time since a named timer started in milliseconds.
 foreign import timeLog :: String -> Effect Unit
 
 -- | Stop a named timer and print time since it started in milliseconds.
