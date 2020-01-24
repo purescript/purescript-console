@@ -38,3 +38,6 @@ timeLog = liftEffect <<< EffConsole.timeLog
 
 timeEnd :: forall m. MonadEffect m => String -> m Unit
 timeEnd = liftEffect <<< EffConsole.timeEnd
+
+clear :: forall m. MonadEffect m => m Unit
+clear = liftEffect EffConsole.clear

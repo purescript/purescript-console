@@ -53,3 +53,6 @@ foreign import timeLog :: String -> Effect Unit
 
 -- | Stop a named timer and print time since it started in milliseconds.
 foreign import timeEnd :: String -> Effect Unit
+
+-- | Clears the console
+foreign import clear :: Effect Unit

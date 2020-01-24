@@ -48,3 +48,8 @@ exports.timeEnd = function (s) {
     return {};
   };
 };
+
+exports.clear = function () {
+  console.clear(s);
+  return {};
+};
