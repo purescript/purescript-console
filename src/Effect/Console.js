@@ -50,6 +50,6 @@ exports.timeEnd = function (s) {
 };
 
 exports.clear = function () {
-  console.clear(s);
+  console.clear();
   return {};
 };
