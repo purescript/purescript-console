@@ -14,4 +14,4 @@ exports.timeLog = s => () => console.timeLog(s);
 
 exports.timeEnd = s => () => console.timeEnd(s);
 
-exports.clear = () => console.clear();
+exports.clear = console.clear;
