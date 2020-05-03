@@ -1,55 +1,17 @@
 "use strict";
 
-exports.log = function (s) {
-  return function () {
-    console.log(s);
-    return {};
-  };
-};
+exports.log = s => () => console.log(s);
 
-exports.warn = function (s) {
-  return function () {
-    console.warn(s);
-    return {};
-  };
-};
+exports.warn = s => () => console.warn(s);
 
-exports.error = function (s) {
-  return function () {
-    console.error(s);
-    return {};
-  };
-};
+exports.error = s => () => console.error(s);
 
-exports.info = function (s) {
-  return function () {
-    console.info(s);
-    return {};
-  };
-};
+exports.info = s => () => console.info(s);
 
-exports.time = function (s) {
-  return function () {
-    console.time(s);
-    return {};
-  };
-};
+exports.time = s => () => console.time(s);
 
-exports.timeLog = function (s) {
-  return function () {
-    console.timeLog(s);
-    return {};
-  };
-};
+exports.timeLog = s => () => console.timeLog(s);
 
-exports.timeEnd = function (s) {
-  return function () {
-    console.timeEnd(s);
-    return {};
-  };
-};
+exports.timeEnd = s => () => console.timeEnd(s);
 
-exports.clear = function () {
-  console.clear();
-  return {};
-};
+exports.clear = () => console.clear();
