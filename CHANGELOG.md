@@ -5,12 +5,16 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
+  - Added support for PureScript 0.14 and dropped support for all previous versions (#30)
 
 New features:
 
 Bugfixes:
 
 Other improvements:
+  - Migrated CI to GitHub Actions and updated installation instructions to use Spago (#32)
+  - Added a CHANGELOG.md file and pull request template (#33, #34)
+  - Removed `return {}` from FFI functions for a small performance boost (#30)
 
 ## [v4.4.0](https://github.com/purescript/purescript-console/releases/tag/v4.4.0) - 2020-01-26
 
