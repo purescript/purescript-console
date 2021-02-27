@@ -5,45 +5,66 @@ import Effect (Effect)
 import Data.Show (class Show, show)
 import Data.Unit (Unit)
 
+class IsLog a
+
+instance isLogString :: IsLog String
+instance isLogArray :: IsLog a => IsLog (Array a)
+
 -- | Write a message to the console.
-foreign import log
-  :: String
-  -> Effect Unit
+log :: forall a. IsLog a => a -> Effect Unit
+log = _log
 
 -- | Write a value to the console, using its `Show` instance to produce a
 -- | `String`.
 logShow :: forall a. Show a => a -> Effect Unit
 logShow a = log (show a)
 
--- | Write an warning to the console.
-foreign import warn
-  :: String
+foreign import _log
+  :: forall a
+   . a
   -> Effect Unit
+
+-- | Write an warning to the console.
+warn :: forall a. IsLog a => a -> Effect Unit
+warn = _warn
 
 -- | Write an warning value to the console, using its `Show` instance to produce
 -- | a `String`.
 warnShow :: forall a. Show a => a -> Effect Unit
 warnShow a = warn (show a)
 
--- | Write an error to the console.
-foreign import error
-  :: String
+foreign import _warn
+  :: forall a
+   . a
   -> Effect Unit
+
+-- | Write an error to the console.
+error :: forall a. IsLog a => a -> Effect Unit
+error = _error
 
 -- | Write an error value to the console, using its `Show` instance to produce a
 -- | `String`.
 errorShow :: forall a. Show a => a -> Effect Unit
 errorShow a = error (show a)
 
--- | Write an info message to the console.
-foreign import info
-  :: String
+foreign import _error
+  :: forall a
+   . a
   -> Effect Unit
+
+-- | Write an info message to the console.
+info :: forall a. IsLog a => a -> Effect Unit
+info = _info
 
 -- | Write an info value to the console, using its `Show` instance to produce a
 -- | `String`.
 infoShow :: forall a. Show a => a -> Effect Unit
 infoShow a = info (show a)
+
+foreign import _info
+  :: forall a
+   . a
+  -> Effect Unit
 
 -- | Start a named timer.
 foreign import time :: String -> Effect Unit

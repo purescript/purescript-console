@@ -1,24 +1,24 @@
 "use strict";
 
-exports.log = function (s) {
+exports._log = function (s) {
   return function () {
     console.log(s);
   };
 };
 
-exports.warn = function (s) {
+exports._warn = function (s) {
   return function () {
     console.warn(s);
   };
 };
 
-exports.error = function (s) {
+exports._error = function (s) {
   return function () {
     console.error(s);
   };
 };
 
-exports.info = function (s) {
+exports._info = function (s) {
   return function () {
     console.info(s);
   };
