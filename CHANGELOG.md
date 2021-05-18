@@ -8,6 +8,8 @@ Breaking changes:
 
 New features:
 
+- Added `debug`
+
 Bugfixes:
 
 Other improvements:
