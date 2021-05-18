@@ -24,6 +24,12 @@ exports.info = function (s) {
   };
 };
 
+exports.debug = function (s) {
+  return function () {
+    console.debug(s);
+  };
+};
+
 exports.time = function (s) {
   return function () {
     console.time(s);
