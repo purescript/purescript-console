@@ -8,7 +8,7 @@ Breaking changes:
 
 New features:
 
-- Added `debug`
+- Added `debug` (#36)
 
 Bugfixes:
 
