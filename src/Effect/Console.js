@@ -1,47 +1,45 @@
-"use strict";
-
-exports.log = function (s) {
+export const log = function (s) {
   return function () {
     console.log(s);
   };
 };
 
-exports.warn = function (s) {
+export const warn = function (s) {
   return function () {
     console.warn(s);
   };
 };
 
-exports.error = function (s) {
+export const error = function (s) {
   return function () {
     console.error(s);
   };
 };
 
-exports.info = function (s) {
+export const info = function (s) {
   return function () {
     console.info(s);
   };
 };
 
-exports.time = function (s) {
+export const time = function (s) {
   return function () {
     console.time(s);
   };
 };
 
-exports.timeLog = function (s) {
+export const timeLog = function (s) {
   return function () {
     console.timeLog(s);
   };
 };
 
-exports.timeEnd = function (s) {
+export const timeEnd = function (s) {
   return function () {
     console.timeEnd(s);
   };
 };
 
-exports.clear = function () {
+export const clear = function () {
   console.clear();
 };
