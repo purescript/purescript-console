@@ -1,5 +1,5 @@
 #!/bin/bash -e
 
 pulp build -I test
-node -e 'require("./output/Test.Main/index.js").main();' > test/actual_output.txt 2>&1
+node --input-type=module -e 'import { main } from "./output/Test.Main/index.js"; main();' > test/actual_output.txt 2>&1
 diff -u test/expected_output.txt test/actual_output.txt
