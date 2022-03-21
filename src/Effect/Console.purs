@@ -45,6 +45,16 @@ foreign import info
 infoShow :: forall a. Show a => a -> Effect Unit
 infoShow a = info (show a)
 
+-- | Write an debug message to the console.
+foreign import debug
+  :: String
+  -> Effect Unit
+
+-- | Write an debug value to the console, using its `Show` instance to produce a
+-- | `String`.
+debugShow :: forall a. Show a => a -> Effect Unit
+debugShow a = debug (show a)
+
 -- | Start a named timer.
 foreign import time :: String -> Effect Unit
 

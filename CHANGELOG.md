@@ -9,6 +9,8 @@ Breaking changes:
 
 New features:
 
+- Added `debug` (#36)
+
 Bugfixes:
 
 Other improvements:

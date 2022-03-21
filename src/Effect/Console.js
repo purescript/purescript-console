@@ -22,6 +22,12 @@ export const info = function (s) {
   };
 };
 
+export const debug = function (s) {
+  return function () {
+    console.debug(s);
+  };
+};
+
 export const time = function (s) {
   return function () {
     console.time(s);
