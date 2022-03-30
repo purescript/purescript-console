@@ -8,7 +8,6 @@ Breaking changes:
 - Migrated FFI to ES modules (#39 by @kl0tl and @JordanMartinez)
 
 New features:
-
 - Added `debug` (#36)
 
 Bugfixes:
