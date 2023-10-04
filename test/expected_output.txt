@@ -3,3 +3,7 @@ warn
 error
 info
 debug
+group
+  log in group
+  groupCollapsed
+    log in groupCollapsed
