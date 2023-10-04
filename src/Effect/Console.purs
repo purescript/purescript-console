@@ -66,3 +66,13 @@ foreign import timeEnd :: String -> Effect Unit
 
 -- | Clears the console
 foreign import clear :: Effect Unit
+
+-- | Creates a new inline group in the console. This indents following console
+-- | messages by an additional level, until `groupEnd` is called.
+foreign import group :: String -> Effect Unit
+
+-- | Same as `group`, but groups are collapsed by default.
+foreign import groupCollapsed :: String -> Effect Unit
+
+-- | Exits the current inline group in the console.
+foreign import groupEnd :: Effect Unit

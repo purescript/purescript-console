@@ -47,3 +47,12 @@ timeEnd = liftEffect <<< EffConsole.timeEnd
 
 clear :: forall m. MonadEffect m => m Unit
 clear = liftEffect EffConsole.clear
+
+group :: forall m. MonadEffect m => String -> m Unit
+group = liftEffect <<< EffConsole.group
+
+groupCollapsed :: forall m. MonadEffect m => String -> m Unit
+groupCollapsed = liftEffect <<< EffConsole.groupCollapsed
+
+groupEnd :: forall m. MonadEffect m => m Unit
+groupEnd = liftEffect EffConsole.groupEnd
