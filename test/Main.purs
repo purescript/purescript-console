@@ -18,3 +18,5 @@ main = do
   Console.log "log in groupCollapsed"
   Console.groupEnd
   Console.groupEnd
+  Console.grouped "grouped" do 
+    Console.log "log in grouped"

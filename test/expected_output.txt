@@ -7,3 +7,5 @@ group
   log in group
   groupCollapsed
     log in groupCollapsed
+grouped
+  log in grouped
