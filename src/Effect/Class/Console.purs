@@ -1,5 +1,6 @@
 module Effect.Class.Console where
 
+import Control.Bind (discard, bind, pure)
 import Data.Function ((<<<))
 import Data.Show (class Show)
 import Data.Unit (Unit)
@@ -47,3 +48,19 @@ timeEnd = liftEffect <<< EffConsole.timeEnd
 
 clear :: forall m. MonadEffect m => m Unit
 clear = liftEffect EffConsole.clear
+
+group :: forall m. MonadEffect m => String -> m Unit
+group = liftEffect <<< EffConsole.group
+
+groupCollapsed :: forall m. MonadEffect m => String -> m Unit
+groupCollapsed = liftEffect <<< EffConsole.groupCollapsed
+
+groupEnd :: forall m. MonadEffect m => m Unit
+groupEnd = liftEffect EffConsole.groupEnd
+
+grouped :: forall m a. MonadEffect m => String -> m a -> m a
+grouped name inner = do
+  group name
+  result <- inner
+  groupEnd
+  pure result

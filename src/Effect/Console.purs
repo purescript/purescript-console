@@ -1,5 +1,6 @@
 module Effect.Console where
 
+import Control.Bind (discard, bind, pure)
 import Effect (Effect)
 
 import Data.Show (class Show, show)
@@ -66,3 +67,22 @@ foreign import timeEnd :: String -> Effect Unit
 
 -- | Clears the console
 foreign import clear :: Effect Unit
+
+-- | Creates a new inline group in the console. This indents following console
+-- | messages by an additional level, until `groupEnd` is called.
+foreign import group :: String -> Effect Unit
+
+-- | Same as `group`, but groups are collapsed by default.
+foreign import groupCollapsed :: String -> Effect Unit
+
+-- | Exits the current inline group in the console.
+foreign import groupEnd :: Effect Unit
+
+-- | Perform an effect within the context of an inline group in the console.
+-- | Calls `group` and `groupEnd` before and after the effect, respectively.
+grouped :: forall a. String -> Effect a -> Effect a
+grouped name inner = do
+  group name
+  result <- inner
+  groupEnd
+  pure result

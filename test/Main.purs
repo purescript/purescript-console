@@ -12,3 +12,11 @@ main = do
   Console.error "error"
   Console.info "info"
   Console.debug "debug"
+  Console.group "group"
+  Console.log "log in group"
+  Console.groupCollapsed "groupCollapsed"
+  Console.log "log in groupCollapsed"
+  Console.groupEnd
+  Console.groupEnd
+  Console.grouped "grouped" do 
+    Console.log "log in grouped"

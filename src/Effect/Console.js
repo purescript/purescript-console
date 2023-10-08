@@ -49,3 +49,19 @@ export const timeEnd = function (s) {
 export const clear = function () {
   console.clear();
 };
+
+export const group = function (s) {
+  return function () {
+    console.group(s);
+  };
+};
+
+export const groupCollapsed = function (s) {
+  return function () {
+    console.groupCollapsed(s);
+  };
+};
+
+export const groupEnd = function () {
+  console.groupEnd();
+};

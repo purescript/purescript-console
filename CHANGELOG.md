@@ -7,6 +7,7 @@ Notable changes to this project are documented in this file. The format is based
 Breaking changes:
 
 New features:
+- Added `group`, `groupCollapsed`, and `groupEnd` (#42 by @pete-murphy)
 
 Bugfixes:
 
