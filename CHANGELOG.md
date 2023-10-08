@@ -7,11 +7,15 @@ Notable changes to this project are documented in this file. The format is based
 Breaking changes:
 
 New features:
-- Added `group`, `groupCollapsed`, and `groupEnd` (#42 by @pete-murphy)
 
 Bugfixes:
 
 Other improvements:
+
+## [v6.1.0](https://github.com/purescript/purescript-console/releases/tag/v6.1.0) - 2023-10-08
+
+New features:
+- Added `group`, `groupCollapsed`, and `groupEnd` (#42 by @pete-murphy)
 
 ## [v6.0.0](https://github.com/purescript/purescript-console/releases/tag/v6.0.0) - 2022-04-27
 
