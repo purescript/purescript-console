@@ -12,6 +12,8 @@ Bugfixes:
 
 Other improvements:
 
+- Migrated from Bower/Pulp to Spago and updated CI, linting, and formatting.
+
 ## [v6.1.0](https://github.com/purescript/purescript-console/releases/tag/v6.1.0) - 2023-10-08
 
 New features:
@@ -92,4 +94,3 @@ This release works with versions 0.7.\* of the PureScript compiler. It will not 
 ## [v0.1.0-rc.1](https://github.com/purescript/purescript-console/releases/tag/v0.1.0-rc.1) - 2015-06-06
 
 Initial release candidate.
-

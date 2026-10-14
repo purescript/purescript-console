@@ -1,9 +1,11 @@
 /.*
 !/.gitignore
-!/.eslintrc.json
+!/.tidyrc.json
+!/.oxfmtrc.json
 !/.github/
 /bower_components/
 /node_modules/
 /output/
-package-lock.json
+/package-lock.json
+/spago.lock
 test/actual_output.txt
