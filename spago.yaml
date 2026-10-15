@@ -1,5 +1,6 @@
 package:
   name: console
+  description: Effectful functions for writing to the console
   build:
     strict: true
     pedanticPackages: true
