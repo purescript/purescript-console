@@ -1,6 +1,6 @@
 module Effect.Class.Console where
 
-import Control.Bind (discard, bind, pure)
+import Control.Bind (bind, discard, pure)
 import Data.Function ((<<<))
 import Data.Show (class Show)
 import Data.Unit (Unit)

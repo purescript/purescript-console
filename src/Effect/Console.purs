@@ -1,10 +1,9 @@
 module Effect.Console where
 
-import Control.Bind (discard, bind, pure)
-import Effect (Effect)
-
+import Control.Bind (bind, discard, pure)
 import Data.Show (class Show, show)
 import Data.Unit (Unit)
+import Effect (Effect)
 
 -- | Write a message to the console.
 foreign import log
